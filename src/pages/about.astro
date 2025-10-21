@@ -1,0 +1,48 @@
+---
+import Container from "@components/Container.astro";
+import PageLayout from "@layouts/PageLayout.astro";
+import Link from "@components/Link.astro";
+import { SITE } from "@consts";
+---
+
+<PageLayout title="About Me" description="About Ali Adnan">
+  <Container>
+    <div class="space-y-16">
+      <section>
+        <article class="space-y-4 font-serif">
+          <h1 class="animate font-semibold text-black dark:text-white text-3xl">
+            About Me
+          </h1>
+          <p class="animate">
+            My name is Ali Imran and I am a Software Engineer. I work mostly in
+            Scala, Python, & TS - looking to pick up Kotlin once I get some
+            time. You can find me on <a
+              href="https://www.linkedin.com/in/aliadnani"
+              class="font-serif"
+            >
+              LinkedIn
+            </a>, <a class="font-serif" href="https://github.com/aliadnani">
+              GitHub
+            </a>, or contact me at <a
+              class="font-serif"
+              href="mailto:ali.adnani@hotmail.com">ali.adnani@hotmail.com</a
+            >.
+            <br />
+            <br />
+            Otherwise, my CV is <a href="/ali-imran-cv.pdf" class="font-serif"
+              >here</a
+            > if you'd like to take a look.
+          </p>
+          <div class="animate">
+            <img
+              src="/me.jpg"
+              alt="Me graduating in nov. 2021"
+              class="rounded-lg"
+            />
+            <p class="text-sm opacity-75 mt-2">me graduating in nov. 2021</p>
+          </div>
+        </article>
+      </section>
+    </div>
+  </Container>
+</PageLayout>

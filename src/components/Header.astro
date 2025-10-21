@@ -1,34 +1,34 @@
 ---
 import Container from "@components/Container.astro";
 import Link from "@components/Link.astro";
+import ThemeToggle from "@components/ThemeToggle.astro";
 import { SITE } from "@consts";
 ---
 
-<header>
+<header class="font-sans">
   <Container>
-    <div class="flex flex-wrap gap-y-2 justify-between">
+    <div class="flex flex-wrap gap-y-2 justify-between items-center">
       <Link href="/" underline={false}>
         <div class="font-semibold">
           {SITE.NAME}
         </div>
       </Link>
-      <nav class="flex gap-1">
-        <Link href="/blog">
-          blog
-        </Link>
-        <span>
-          {`/`}
-        </span>
-        <Link href="/work">
-          work
-        </Link>
-        <span>
-          {`/`}
-        </span>
-        <Link href="/projects">
-          projects
-        </Link>
-      </nav>
+      <div class="flex items-center gap-4">
+        <nav class="flex gap-1">
+          <!-- <Link href="/blog">
+            blog
+          </Link>
+          <span>
+            {`/`} 
+          </span> -->
+          <Link href="/about"> about </Link>
+          <span>
+            {`/`}
+          </span>
+          <Link href="/projects"> projects </Link>
+        </nav>
+        <ThemeToggle />
+      </div>
     </div>
   </Container>
 </header>

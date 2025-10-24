@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    {"source": "/optimo", "destination": "https://optimo-flax.vercel.app/"},
+  ]
+}

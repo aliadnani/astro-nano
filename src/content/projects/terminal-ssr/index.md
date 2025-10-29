@@ -10,4 +10,4 @@ image: "/ssr.gif"
 
 Server-side rendered terminal UIs.
 
-A novel approach to building terminal user interfaces by rendering them on the server side, enabling powerful terminal applications with centralized logic and state management.
+Everyone on r/selfhosted has fancy grafana or monitoring dashboards for their services. I wanted to try build something simpler. Abuses escape codes over server sent terminal sessions to display a moving terminal UI.
